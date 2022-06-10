@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="City">
+    <option value="Ha Noi">Ha Noi</option>
+    <option value="Nam Dinh">Nam Dinh</option>
+</select>
+<script>
+    var selectedElement = document.getElementById("City");
+    selectedElement.addEventListener("change",changeFuntion);
+
+    function changeFuntion()
+    {
+        var selectValue = document.getElementById("City").value;
+        alert(selectValue);
+    }
+</script>
+</body>
+</html>

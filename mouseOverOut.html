@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo" onmouseover="mouseover()" onmouseout="mouseout()">Hello World</p>
+
+<p id="demo1">Hello World 1</p>
+
+<script>
+    function mouseover(){
+        document.getElementById("demo").style.color="red";
+    }
+    function mouseout(){
+        document.getElementById("demo").style.color="black";
+    }
+    var demo = document.getElementById("demo1");
+    demo.addEventListener("mouseover",mouseover);
+    demo.addEventListener("mouseout",mouseout);
+    function mouseover(){
+        document.getElementById("demo1").style.color="blue";
+    }
+    function mouseout(){
+        document.getElementById("demo1").style.color="black";
+    }
+</script>
+
+</body>
+</html>

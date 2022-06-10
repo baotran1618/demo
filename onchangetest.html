@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="City" onchange="chonHuyen()">
+    <option value="Ha Noi">Ha Noi</option>
+    <option value="Nam Dinh">Nam Dinh</option>
+</select>
+<select id="HN" name="Ha Noi">
+    <option value="Thanh Xuan">Thanh Xuan</option>
+    <option value="Hai Ba Tung">Hai Ba Tung</option>
+</select>
+<select id="ND" name="Nam Dinh">
+    <option value="Giao Thuy">Giao Thuy</option>
+    <option value="Xuan Truong">Xuan Truong</option>
+</select>
+<script>
+    function chonHuyen(){
+        var selectedValue = document.getElementById("City").value;
+        alert(selectedValue);
+    }
+</script>
+</body>
+</html>
